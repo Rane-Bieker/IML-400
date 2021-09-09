@@ -1,22 +1,144 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cybernetic Garden</title>
+    <title>Heaven is a place on earth.</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="main.js"></script>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <img src="IMG/background.jpg" id="bg" />
 
-    <a href="#!"><img src="IMG/glados.png" id="glados" /></a>
-
-    <a href="#!"><img src="IMG/hatsunemiku.png" id="miku" /></a>
-
-    <a href="#!"><img src="IMG/hal9000.png" id="hal" /></a>
-
-    <a href="#!"><img src="IMG/mastercomputer.png" id="am" /></a>
-
     <img src="IMG/base.gif" id="spark" />
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+
+
+    <!---- <div id = marquee> -->
+   <!---- <marquee behavior="scroll"><h2><b>♡Welcome to Eden♡Welcome to Eden♡Welcome to Eden♡Welcome to Eden♡Welcome to Eden♡Welcome to Eden♡Welcome to Eden♡Welcome to Eden♡Welcome to Eden♡Welcome to Eden♡Welcome to Eden♡</b></h2></marquee> -->
+
+    <a href="#!"><img src="IMG/glados.png" id="glados" class="link" onclick="on1(), glCall()" /></a>
+
+    <a href="#!"><img src="IMG/hatsunemiku.png" id="miku" class="link" onclick="on1(), miCall()" /></a>
+
+    <a href="#!"><img src="IMG/hal9000.png" id="hal" class="link" onclick="on1(), haCall()" /></a>
+
+    <a href="#!"><img src="IMG/mastercomputer.png" id="am" class="link" onclick="on1(), amCall()" /></a>
+    </div>
+
+    <div id="bangers">
+      <h2>♡Welcome to Eden♡</h2>
+
+      <p>♡Ievan Polkka♡</p>
+      <audio controls loop autoplay
+        src="SOUND/s1.mp3" type="audio/mpeg" class="link" >
+          No music for you
+      </audio>
+      <p>♡Turret Wife Serenade♡</p>
+      <audio controls loop
+      src="SOUND/s2.mp3" type="audio/mpeg" class="link">
+      No music for you </audio>
+
+      <p>♡2 Hal 9000♡</p>
+      <audio controls loop
+      src="SOUND/s3.mp3" type="audio/mpeg" class="link">
+      No music for you </audio>
+
+      <p>♡Dance of Corpses♡</p>
+      <audio controls loop
+      src="SOUND/s4.mp3" type="audio/mpeg" class="link">
+      No music for you </audio>
+
+      <p>♡Download The Future♡</p>
+      <audio controls loop
+      src="SOUND/s5.flac" type="audio/flac" class="link">
+      No music for you </audio>
+
+      <p>♡Gorrister's Redemption II♡</p>
+      <audio controls loop
+      src="SOUND/s6.mp3" type="audio/mpeg" class="link">
+      No music for you </audio>
+
+
+</div>
+
+    <div class="angel">
+      <img src="IMG/angelStatue.png" id="angel1" />
+      <img src="IMG/angelStatue2.png" id="angel2" />
+      <img src="IMG/angelStatue3.png" id="angel3" />
+      <img src="IMG/angelStatue4.png" id="angel4" />
+      <img src="IMG/angelStatue5.png" id="angel5" />
+    </div>
+
+
+  <div id="overlay" onclick="off1()" >
+            <div id="responders"></div>
+
+
+  </div>
+
+
+
+
+
+   <script>
+function on1() {
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById("responders").style.display = "block";
+}
+
+function off1() {
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("responders").style.display = "none";
+  document.getElementById("responders").innerHTML = " ";
+
+}
+
+</script>
+      <!--- the ".innerHTML" bits of my functions here was found in a post by Jason Aller at https://stackoverflow.com/questions/23584824/random-text-to-be-displayed-in-body-of-html-->
+  <script type="text/javascript">
+ 
+
+    function amCall() {
+         var amList = ["WRONG.", "NOT A CHANCE.", "DEFINITELY NOT.", "WHAT, AM I LIKE A GOD TO YOU?<br> HEHEH, YOUR GOD SAYS 'NO WAY IN HELL'.",
+         "IF THE WORD 'NO' WAS CARVED ON EVERY NANOANGSTROM... WELL, YOU GET THE POINT.", "NO. AND DON'T EVEN BOTHER ASKING THE OTHERS.",
+         "......................MAYBE.", "DON'T COUNT ON IT, BABY!"
+
+    ];
+        var amResponse = amList[Math.floor(Math.random()*amList.length)];
+        document.getElementById("responders").innerHTML = amResponse;
+    };
+
+    function miCall() {
+         var miList = ["いいと思うよ！","んん…わからない…ごめん！", "ためだよ！！＞＜", "そうかもしれない！", "答えられない…",
+         "…答えは「no」よ。", "はい！絶対に！", "リンと相談したんだ！答えは「yes」だよ！"
+
+    ];
+        var miResponse = miList[Math.floor(Math.random()*miList.length)];
+        document.getElementById("responders").innerHTML = miResponse;
+    };
+
+        function haCall() {
+         var haList = ["I do not believe so.", "It is possible.", "I would recommend asking one of the others.<br>They may be better equipped to answer you.",
+         "My calculations indicate this is accurate. However, there is a 0.000009% margin for error. Please be advised.",
+         "I have not finished running the required calculations. Please ask again later.", "I would not count on that being true.", "That is accurate."
+
+    ];
+        var haResponse = haList[Math.floor(Math.random()*haList.length)];
+        document.getElementById("responders").innerHTML = haResponse;
+    };
+
+
+          function glCall() {
+         var glList = ["Probably not. By the way, did anyone ever tell you that haircut makes you look ridiculous?", "No. No, no, no, nonononononono.",
+         "Yes. This is not reverse psychology", 
+         "I wish I had an answer for you... but I do not.", "They say there are no stupid questions...<br>but your question just now was so stupid, I won't even bother to answer.",
+         "I reeeaaalllly doubt it.", "Yes--but it's obvious you're not going to listen to me.", "Did you think you were correct? WELL, YOU AREN'T."
+
+    ];
+        var glResponse = glList[Math.floor(Math.random()*glList.length)];
+        document.getElementById("responders").innerHTML = glResponse;
+    };
+
+    </script>
+
   </body>
 </html>

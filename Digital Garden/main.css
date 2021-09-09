@@ -1,9 +1,19 @@
+html,
+body {
+  cursor: url("IMG/curs.png"), auto;
+}
+
+.link {
+  cursor: url("IMG/cursPray.png"), auto;
+}
+
 #bg {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -10;
 }
 
 #glados {
@@ -59,4 +69,126 @@
   bottom: 0vh;
   left: 25vw;
   transform: scale(0.5);
+}
+
+.angel {
+  display: none;
+  transform: scale(0.4);
+  animation: upAndDown 3.5s infinite;
+  top: 0vh;
+}
+
+@keyframes upAndDown {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(200%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
+
+#angel1 {
+  position: fixed;
+  left: -50vw;
+  top: 15vh;
+}
+
+#angel2 {
+  position: fixed;
+  top: 75vh;
+}
+
+#angel3 {
+  position: fixed;
+  top: 155vh;
+  left: -65vw;
+}
+
+#angel4 {
+  position: fixed;
+  top: 95vh;
+  right: -80vw;
+  transform: scale(0.6);
+}
+
+#angel5 {
+  position: fixed;
+  top: 30vh;
+  right: 0vw;
+}
+
+#bangers {
+  position: absolute;
+  padding: 2vw;
+  animation: rainbow 10s infinite;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 15pt;
+  font-weight: bolder;
+  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+
+#responders {
+  width: 100%;
+  height: 100%;
+  top: 40%;
+  z-index: 10;
+  font-size: 40pt;
+  margin: auto;
+  position: absolute;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+#marqee {
+  animation: rainbow 10s infinite;
+}
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+
+  20% {
+    color: orange;
+  }
+
+  45% {
+    color: yellow;
+  }
+  55% {
+    color: green;
+  }
+
+  65% {
+    color: blue;
+  }
+
+  80% {
+    color: indigo;
+  }
+
+  95% {
+    color: violet;
+  }
+
+  100% {
+    color: red;
+  }
 }
