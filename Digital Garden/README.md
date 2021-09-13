@@ -11,3 +11,4 @@ Features audio and hover elements. The main feature is the prayer system; hold a
 on your "God" of choice.
 
 (Trying to get a gif of my website would be a real pain in the ass, so I'm settling for a screencap.)
+((The screencap doesn't even work...))
