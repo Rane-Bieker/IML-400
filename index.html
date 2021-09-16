@@ -1,51 +1,97 @@
-
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Rane's Homepage</title>
+  <head>
+    <title>check out my balling launch page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css" />
     <meta charset="utf-8" />
-</head>
+  </head>
 
-<body>
-  <div>
-    <h1>Rane</h1>
-    <p> This is my website for IML400 class. A little bit about me. </p>
-  </div>
+  <body>
+    <video loop autoplay muted id="bg">
+      <source src="IMG/amvd.mp4" type="video/mp4" />
+      Haha no cool shit for YOU
+    </video>
 
-  
-  <div>
+    <img src="IMG/wavy.gif" id="wavy" />
+
+    <div id="info" class="drag">
+      <h1>Rane</h1>
+      <p>
+        My name's Rane Bieker and I'm here to say<br />I love websites in a
+        major way.<br />Yes I frankensteined together that custom haku/miku
+        module. What about it.
+      </p>
+    </div>
+
+    <div id="preso" class="drag">
       <h1>Presentation</h1>
-      <a href="" target="blank">Pecha Kucha: Lorem Ipsum</a>
-  </div>
+      <a
+        href="https://docs.google.com/presentation/d/1IfzoI9_l_Jc1vZm9IgRBQPTY64lb1wwZJTfKGSYjlew/edit?usp=sharing"
+        target="blank"
+        >Pecha Kucha: Cybernetics</a
+      >
+    </div>
 
-  <div>
+    <div id="projects" class="drag">
       <h1>Projects</h1>
       <h2>Project 1: Cybernetic Garden</h2>
-      <a href="" target="blank">Final: Lorem Ipsum</a>
+      <a
+        href="https://rane-bieker.github.io/IML-400/Digital%20Garden/index.html"
+        target="blank"
+        >Final: AI Eden</a
+      >
       <h2>Project 2: Collective Digital Care</h2>
-      <a href="" target="blank">Final: Lorem Ipsum</a>
+      <a href="" target="blank">N/A</a>
       <h2>Project 3: AI & I</h2>
-      <a href="" target="blank">Final: Lorem Ipsum</a>
-  </div>
+      <a href="" target="blank">N/A</a>
+    </div>
 
-  <div>
-    <h1>Exercises</h1>
-    <ul>
+    <div id="exercises" class="drag">
+      <h1>Exercises</h1>
+      <ul>
         <li><a href="">p5.js sketch 1</a></li>
         <li><a href="">p5.js sketch 2</a></li>
         <li><a href="">p5.js sketch 3</a></li>
-    </ul>
-</div>
+      </ul>
+    </div>
+    <div id="think" class="drag">
+      <!--add a h1 element called 'Thoughts' Below-->
+      <h1>Thoughts</h1>
+      <a
+        href="https://docs.google.com/document/d/1MvdziUylqvRPpnwFthTjO-YgfUQWhvX_VbRuQMycuu4/edit?usp=sharing"
+        target="blank"
+      >
+        First reading response<br
+      /></a>
+      <a
+        href="https://docs.google.com/document/d/1Vf3gmeHqwe3-eyvIFZ1uSecG1JXQet-h4vJ7cVSp59Q/edit?usp=sharing"
+        target="blank"
+      >
+        Second reading response<br
+      /></a>
+    </div>
 
-<!--add a h1 element called 'Thoughts' Below-->
-<h1>Thoughts</h1>
+    <!---Button code and script taken from Caleb Zahnd on CodePen.io. https://codepen.io/calebzahnd/pen/VvZZeJ -->
+    <button id="mute-video">
+      I HATE THAT CHROMIUM BROWSERS<br />DON'T ALLOW AUTOPLAY WITH SOUND
+    </button>
 
+    <footer>Fall, 2021.</footer>
 
-<footer>
-  Fall, 2021.
-</footer>
+    <script>
+      $("video").prop("muted", true);
 
-
-</body>
+      $("#mute-video").click(function () {
+        if ($("video").prop("muted")) {
+          $("video").prop("muted", false);
+        } else {
+          $("video").prop("muted", true);
+        }
+      });
+    </script>
+  </body>
 </html>

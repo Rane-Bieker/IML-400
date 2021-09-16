@@ -1,0 +1,63 @@
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+}
+
+#mute-video {
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+}
+
+#info {
+  background-color: pink;
+  top: 5vh;
+}
+
+#projects {
+  background-color: red;
+  top: 45vh;
+  left: 12vw;
+}
+
+#think {
+  background-color: cyan;
+  top: 27vh;
+  left: 28vw;
+}
+
+#exercises {
+  background-color: orange;
+  top: 55vh;
+  right: 3vw;
+}
+
+#preso {
+  background-color: palegoldenrod;
+  top: 20vh;
+  right: 18vw;
+}
+
+.drag {
+  width: 20vw;
+  padding: 3px;
+  text-align: center;
+  filter: opacity(85%);
+  margin-left: 2vw;
+  margin-right: 2vw;
+  position: fixed;
+}
+
+#wavy {
+  z-index: -1;
+  position: fixed;
+  left: 32vw;
+}
