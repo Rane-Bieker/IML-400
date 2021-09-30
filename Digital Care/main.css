@@ -1,9 +1,38 @@
+body {
+  background-color: lightgreen;
+}
+
+.bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -5;
+  display: none;
+  filter: opacity(90%);
+}
+
 #yt {
   animation: rainbow 10s infinite;
   text-align: center;
   position: fixed;
   width: 35vw;
   padding: 15px;
+}
+
+#buttonbox {
+  position: fixed;
+  width: 5vw;
+  top: 5vh;
+  right: 5vw;
+  padding: 15px;
+  text-align: right;
+}
+
+.button {
+  margin: 10px;
+  float: right;
 }
 
 @keyframes rainbow {
