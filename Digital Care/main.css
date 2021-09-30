@@ -1,0 +1,32 @@
+#yt {
+  animation: rainbow 10s infinite;
+  text-align: center;
+  position: fixed;
+  width: 35vw;
+  padding: 15px;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: pink;
+  }
+
+  25% {
+    background-color: palegoldenrod;
+  }
+
+  50% {
+    background-color: palegreen;
+  }
+
+  75% {
+    background-color: paleturquoise;
+  }
+
+  90% {
+    background-color: palevioletred;
+  }
+  100% {
+    background-color: pink;
+  }
+}
