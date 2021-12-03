@@ -26,12 +26,14 @@ body {
   background-color: red;
   top: 45vh;
   left: 12vw;
+  padding: 20px;
 }
 
 #think {
   background-color: cyan;
   top: 27vh;
   left: 28vw;
+  padding: 20px;
 }
 
 #exercises {
@@ -44,6 +46,7 @@ body {
   background-color: palegoldenrod;
   top: 20vh;
   right: 18vw;
+  padding: 20px;
 }
 
 .drag {
